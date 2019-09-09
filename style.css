@@ -1,20 +1,29 @@
 /* HOMEPAGE */
 
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all 1s;
+}
+#particles-js{
+    height: 100vh;
+    width: 100vw;
+    background:rgb(22, 4, 10);
+    /* z-index:0; */
 }
 
 .home_page{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/img-bg2.jpg)center/cover no-repeat fixed;
     font-family: 'Poppins', sans-serif;
-    z-index: -1;
-    
-    
+    width: 100vw;
+    height: 0vh;
 }
 .text_align{
     position: relative;
@@ -41,42 +50,174 @@
 
 /* HOMEPAGE-ABOVE */
 .home_page_above{
+    transition: all 1s;
     max-height: 100vh !important;
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0; 
-    z-index: 10;
+    z-index: 99999;
     transform: rotate(-34deg);
 }
 
 .col-lg-6{
     position: relative;
     top: -200px;
-    height: 560px;
+    left: -80px;
+    height: 600px;
     border: 1px solid white;
+    opacity: 0.5;
 }
-.col-lg-3 .one{
+.col-lg-4 .one{
     height: 300px;
-    width: 340px;
+    width: 452px;
+    position: relative;
+    top: -30px;
+    left: -80px;
     border: 1px solid white;
+    opacity: 0.5;
 }
-.col-lg-3 .two{
-    height: 300px;
-    width: 340px;
+.col-lg-4 .one:hover{
+    transition: all 0.6s;   
+    background:white;
+    opacity: 0.1; 
+    border: 14px solid white;
+    opacity: 0.2;
+}
+.col-lg-4 .two{
+    height: 400px;
+    width: 452px;
+    position: relative;
+    top: -30px;
+    left: -80px;
     border: 1px solid white;
+    opacity: 0.5;
 }
-.col-lg-3 .three{
+.col-lg-4 .two:hover{
+    transition: all 0.6s;    
+    background: white;
+    opacity: 0.1; 
+    border: 14px solid white;
+    opacity: 0.2;
+}
+.col-lg-4 .three{
 
     height: 300px;
-    width: 340px;
+    width: 452px;
+    position: relative;
+    top: -30px;
+    left: -80px;
     border: 1px solid white;
+    opacity: 0.5;
+}
+.col-lg-4 .three:hover{
+    transition: all 0.6s;  
+    background: white;
+    opacity: 0.1;   
+    border: 14px solid white;
+    opacity: 0.2;
 }
 .above_col_3{
     position: relative;
     top: 250px;
-    height: 300px;
+    left: -83px;
+    height: 500px;
     width: auto;
     border: 1px solid white;
+    border-color: white transparent white white;
+    margin: 0px;
+    opacity: 0.5;
+}
+.above_col_3:hover{
+    transition: all 0.6s;    
+    background: white;
+    opacity: 0.1; 
+    border: 14px solid white;
+    border-color: white transparent white white;
+    opacity: 0.2;
+}
+
+
+/* HOME-PAGE-MIDDLE */
+.home_page_middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.resume_positioning{
+    position: relative;
+    left: 560px;
+    top: 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.resume_positioning:hover{
+    left: 540px;
+    top: 70px;
+}
+.resume_positioning_no{
+    position: relative;
+    left: 530px;
+    top: 40px;
+    border-bottom: 1px solid white;
+    width: 60px;
+    opacity: 0.9;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.portfolio_positioning{
+    position: relative;
+    left: 750px;
+    top: 270px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.portfolio_positioning_no{
+    position: relative;
+    left: 710px;
+    top: 260px;
+    border-bottom: 1px solid white;
+    width: 60px;
+    opacity: 0.9;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.blog_positioning{
+    position: relative;
+    left: 1060px;
+    top: 390px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.blog_positioning_no{
+    position: relative;
+    left: 1000px;
+    top: 380px;
+    border-bottom: 1px solid white;
+    width: 60px;
+    opacity: 0.9;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.contact_positioning{
+    position: relative;
+    left: 1100px;
+    bottom: 200px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.contact_positioning_no{
+    position: relative;
+    left: 1050px;
+    bottom: 220px;
+    border-bottom: 1px solid white;
+    width: 60px;
+    opacity: 0.9;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
